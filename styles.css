@@ -7,22 +7,40 @@ header,footer{
 }
 
 /*Inside Headder Style */
+header {
+    display: flex;
+    position: relative;
+    align-items: center;
+    color: white;
+    height: 80px;
+  }
 .pageTitle{
+    margin: 10%;
+    width: 15%;
+    margin-left: 40%;
     background-color: white;
-    width: max-content;
-    margin: 0 auto;
+    position: absolute;
+    color: rgb(33, 33, 78);
+    text-align: center;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red;
+    height: 50px;
+    padding-bottom: 0.5rem;
+    overflow: hidden;
+
 }
 .pageTitle>h2{
+    margin-top: 2%;
     padding-bottom: 0;
     margin-bottom: 0;
-    /*text-align: center;*/
+    text-align: center;
 }
 .pageTitle>p{
     margin-top: 0;
     padding-top: 0;
     text-align: center;
 }
-
 /*Main Style */
 main{
     background-color: white;
@@ -81,8 +99,15 @@ footer>p{
     padding: 5Px;
 }
 
-@media only screen and (max-width:600px) {
+@media screen and (max-width:1000px) {
+    
     .subHeader{
         display: block;
+    }
+    .left>select{
+        width: max-content;
+    }
+    #subH{
+        text-align: center;
     }
 }
