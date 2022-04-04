@@ -80,3 +80,9 @@ footer>p{
     color: white;
     padding: 5Px;
 }
+
+@media only screen and (max-width:600px) {
+    .subHeader{
+        display: block;
+    }
+}
